@@ -1,3 +1,4 @@
+#streamlit run streamlit_combo.py
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -5,7 +6,7 @@ import seaborn as sns
 
 # 데이터 로드
 data = pd.read_csv('data/data_draw_korea.csv')
-data = data.drop('Unnamed: 0', axis=1)
+data.drop('Unnamed: 0', axis=1 ,inplace=True)
 plt.rc('font', family="Malgun Gothic")
 
 # Streamlit UI 구성

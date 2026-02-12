@@ -36,7 +36,7 @@ if st.button("제출하기"):
         st.write(f"**이름:** {name}")
         st.write(f"**학년:** {grade}")
         st.write(f"**파이썬 경험:** {experience}")
-        st.write(f"**관심 분야:** {', '.join(interests) if interests else '없음'}")
+        st.write(f"**관심 분야:** {', '.join(interests) if interests else '없음'}") # join : 콤마를 기준으로 리스트 되어있는것을 문자열로 이어줌
         st.write(f"**만족도:** {satisfaction}점")
         if opinion:
             st.write(f"**기타 의견:** {opinion}")
